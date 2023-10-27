@@ -1,0 +1,8 @@
+
+  @media (max-width: 770px) {
+    .navbar {
+        position: static; /* Change to static position for smaller screens */
+        width: 100%; /* Make it full-width for smaller screens */
+        margin: 0; /* Adjust margin for smaller screens if needed */
+    }
+  }

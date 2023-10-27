@@ -1,0 +1,57 @@
+.ac-image {
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style the left side image container */
+.ac-image .Ac {
+    display: flex; /* Arrange the left-side images horizontally */
+   
+  
+}
+
+/* Style individual images on the left */
+.ac-image .Ac img {
+    max-width: 100px; /* Adjust the max-width as needed */
+    height: auto;
+    margin-right: 20px; /* Add some space between the left-side images */
+    margin-top: 70px;
+}
+
+.ac-image > img {
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin-top: 50px;
+  
+    height: auto;
+}
+
+/* Optional: Add a border to the images for better separation */
+.ac-image img {
+    border: 2px solid #ccc;
+}
+@media (max-width: 770px) {
+
+    .ac-image {
+        flex-direction:column; /* Stack items vertically */
+       align-items: center;
+        padding: 6px; /* Adjust padding for smaller screens */
+        margin-top: 30px;
+    }
+
+    .ac-image img {
+        max-width: 85%; /* Images take full width on smaller screens */
+    
+    }
+
+    .ac-image > img {
+        width: 100%; /* Right-side image takes full width */
+        height: auto;
+       
+    }
+
+    .ac-image .Ac img {
+
+     width: 80px;
+    }
+    }
